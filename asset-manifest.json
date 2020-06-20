@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/cnx-app/static/js/main.924a31d0.chunk.js",
-    "main.js.map": "/cnx-app/static/js/main.924a31d0.chunk.js.map",
+    "main.js": "/cnx-app/static/js/main.bc2331c7.chunk.js",
+    "main.js.map": "/cnx-app/static/js/main.bc2331c7.chunk.js.map",
     "runtime-main.js": "/cnx-app/static/js/runtime-main.6148f49b.js",
     "runtime-main.js.map": "/cnx-app/static/js/runtime-main.6148f49b.js.map",
     "static/js/2.642eae78.chunk.js": "/cnx-app/static/js/2.642eae78.chunk.js",
     "static/js/2.642eae78.chunk.js.map": "/cnx-app/static/js/2.642eae78.chunk.js.map",
     "index.html": "/cnx-app/index.html",
-    "precache-manifest.07f6efae2636534566d5f1531a08be24.js": "/cnx-app/precache-manifest.07f6efae2636534566d5f1531a08be24.js",
+    "precache-manifest.1e1a572ad223900ea7db35eef3179203.js": "/cnx-app/precache-manifest.1e1a572ad223900ea7db35eef3179203.js",
     "service-worker.js": "/cnx-app/service-worker.js",
     "static/js/2.642eae78.chunk.js.LICENSE.txt": "/cnx-app/static/js/2.642eae78.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/cnx-app/static/media/logo.99e0859d.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.6148f49b.js",
     "static/js/2.642eae78.chunk.js",
-    "static/js/main.924a31d0.chunk.js"
+    "static/js/main.bc2331c7.chunk.js"
   ]
 }
