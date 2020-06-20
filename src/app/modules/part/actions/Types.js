@@ -1,0 +1,4 @@
+// @flow
+export const GET_PART_LIST = "GET_PART_LIST";
+export const GET_PART_LIST_SUCCESS = "GET_PART_LIST_SUCCESS";
+export const GET_PART_LIST_FAILURE = "GET_PART_LIST_FAILURE";
