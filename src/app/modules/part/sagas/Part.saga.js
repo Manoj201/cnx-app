@@ -4,17 +4,15 @@ import { takeLatest, call, put } from "redux-saga/effects";
 import type { Saga } from "redux-saga";
 
 import Actions from "../actions/Part.actions";
+import PartApiService from "../../../api/Part.service";
 
 import { GET_PART_LIST } from "../actions/Types";
 
 export default () => {
   function* getPartList({ payload }) {
     try {
-      yield put(
-        Actions.getPartListSuccess({
-          name: "Manoj",
-        })
-      );
+      const response = yield call(PartApiService.getPartList);
+      yield put(Actions.getPartListSuccess(response));
     } catch (error) {
       yield put(Actions.getPartListFailure(error));
     }
