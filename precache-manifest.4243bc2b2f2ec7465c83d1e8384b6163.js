@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33cbe81378c88c9de0bff1b60c0eadfc",
+    "revision": "ef6b4f10d1acab62eae27969d6c97011",
     "url": "/cnx-app/index.html"
   },
   {
-    "revision": "3c1a373be9e7271ca48e",
-    "url": "/cnx-app/static/js/2.57d1a354.chunk.js"
+    "revision": "6c7339c81f17c493d7d1",
+    "url": "/cnx-app/static/js/2.dc8c555c.chunk.js"
   },
   {
     "revision": "a4b2a4397976c28159e52c132671433a",
-    "url": "/cnx-app/static/js/2.57d1a354.chunk.js.LICENSE.txt"
+    "url": "/cnx-app/static/js/2.dc8c555c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0673f66adc6ddc21f913",
-    "url": "/cnx-app/static/js/main.e1d7e063.chunk.js"
+    "revision": "e0a904e196130d85e17e",
+    "url": "/cnx-app/static/js/main.63a9ae4d.chunk.js"
   },
   {
     "revision": "c0f6d651c75026ed6ede",
