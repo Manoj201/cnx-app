@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Grid from "@material-ui/core/Grid";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { makeStyles } from "@material-ui/styles";
 import { useHistory } from "react-router-dom";
 
@@ -30,8 +31,20 @@ const AddEditPartContainer = (props) => {
     dispatch(Actions.getPartList());
   }, [dispatch]);
 
+  const handleNavigateBack = React.useCallback(() => {
+    history.goBack();
+  }, [history]);
+
   return (
     <React.Fragment>
+      <Grid container justify="flex-end">
+        <ActionButton
+          label="Go Back"
+          startIcon={<ArrowBackIosIcon />}
+          onClick={handleNavigateBack}
+        />
+      </Grid>
+
       <AddEditPartForm />
     </React.Fragment>
   );
