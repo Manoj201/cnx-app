@@ -26,13 +26,19 @@ const PartListContainer = (props) => {
   const classes = useStyles();
   let history = useHistory();
 
+  const [allList, setAllList] = React.useState([]);
+
+  const partList = useSelector((state) => state.partState.partList);
+  const loading = useSelector((state) => state.partState.partListLoading);
+  const newPartList = useSelector((state) => state.partState.newPartList);
+
   React.useEffect(() => {
     dispatch(Actions.getPartList());
   }, [dispatch]);
 
-  const partList = useSelector((state) => state.partState.partList);
-  const loading = useSelector((state) => state.partState.partListLoading);
-  // const partListError = useSelector((state) => state.partState.partListError);
+  React.useEffect(() => {
+    setAllList([...partList, ...newPartList]);
+  }, [newPartList, partList]);
 
   const handleClickAddPart = React.useCallback(() => {
     history.push("/app/new-part");
@@ -48,7 +54,7 @@ const PartListContainer = (props) => {
             startIcon={<AddCircleIcon color="secondary" />}
           />
         </Grid>
-        {partList.map((part) => {
+        {allList.map((part) => {
           return (
             <Grid item xs>
               <PartItem {...part} />

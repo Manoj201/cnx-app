@@ -36,6 +36,7 @@ const FormSelectField = ({
       variant="outlined"
       className={classes.formControl}
       size={"small"}
+      error={error}
     >
       <InputLabel ref={inputLabel} id="demo-simple-select-filled-label">
         {label}

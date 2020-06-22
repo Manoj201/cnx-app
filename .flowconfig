@@ -7,5 +7,13 @@
 [lints]
 
 [options]
+module.name_mapper='^app\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/\1'
+module.name_mapper='^app/api\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/api/\1'
+module.name_mapper='^app/shared\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/shared/\1'
+module.name_mapper='^app/modules\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/modules/\1'
 
 [strict]
+
+[untyped]
+.*/node_modules/*
+
